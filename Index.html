@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,300;0,400;1,300&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,300;0,400;1,300&family=Raleway:wght@400;500;700&family=Rubik:wght@300&display=swap"
+        rel="stylesheet">
+    
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
+        #navbar {
+            background-color: #BE3144;
+            color: white;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 70px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        nav li {
+            list-style-type: none;
+            font-size: 20px;
+            padding: 0 17px;
+        }
+
+        #welcome-section {
+            background-color: #313336;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        #welcome-section h1 {
+            font-family: "raleway";
+            color: white;
+            font-size: 53px;
+            height: auto;
+        }
+
+        #welcome-section p {
+            color: #BE3144;
+            font-family: "Poppins";
+            font-size: 26.5px;
+            height: auto;
+        }
+
+        #projects {
+            background-color: #45567D;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .project-container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #projects h2 {
+            font-size: 35px;
+            font-family: "raleway";
+            text-align: center;
+            color: white;
+            padding: 10px;
+            border-bottom: 1px white solid;
+            margin-bottom: 30px;
+
+        }
+
+        .project-tile {
+            background-color: #313336;
+            text-align: center;
+            margin: 20px 20px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .project-tile a {
+            font-size: 18px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        #btn {
+            background-color: #313336;
+            width: 101px;
+            height: 27px;
+            padding: 10px 20px;
+            text-align: center;
+            margin: 20px 0 40px 0;
+        }
+
+        #btn:hover {
+            background-color: #BE3144;
+        }
+
+        #contact-link {
+            background-color: #313336;
+            color: white;
+            font-family: "Poppins";
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 5px #BE3144 solid;
+        }
+
+        #contact-link h2 {
+            background-color: #303841;
+            color: white;
+            font-size: 55px;
+            margin-top: 110px;
+            font-family: "Raleway";
+        }
+
+        #contact-link p {
+            margin-bottom: 40px;
+        }
+
+        #contact-link div {
+            font-size: 23px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            max-width: 980px;
+            flex-wrap: wrap;
+            padding: 10px;
+            margin: 0 10px;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #contact-link a {
+            margin: 15px;
+        }
+
+        footer {
+            background-color: #313336;
+            color: white;
+            font-family: "Poppins";
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        footer p{
+            margin-left: 20px;
+        }
+        
+        @media(max-width:460px) {
+            #contact-link h2 {
+            font-size: 35px;
+        }
+        }
+
+        @media(min-width:715px) {
+            #projects {
+                background-color: #45567D;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #project-container {
+                display: grid;
+                grid-template-columns: 50% 50%;
+            }
+
+            img {
+                width: 100%;
+                height: 400px;
+            }
+
+            #contact-link h2 {
+            background-color: #313336;
+            color: white;
+            margin-top: 50px;
+            
+        }
+        }
+
+        @media(min-width:1075px) {
+            #projects {
+                background-color: #45567D;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+
+            #project-container {
+                display: grid;
+                grid-template-columns: 33% 33% 33%;
+            }
+
+            img {
+                width: 100%;
+                height: 300px;
+                max-width: 400px;
+            }
+        }
+    </style>
+
+    <title>Personal Portafolio</title>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#welcome-section">About</a></li>
+            <li><a href="#projects">Works</a></li>
+            <li><a href="#contact-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="welcome-section">
+        <h1>Hey yo soy eugenio</h1>
+        <p><em>Un desarrollador web</em></p>
+    </section>
+
+    <section id="projects">
+        <h2>These are some of my projects</h2>
+        <div id="project-container">
+            <div class="project-tile">
+                <a href="www.Facebook.com">
+                    <img class="project-image"
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                    <p style="padding: 20px 0 20px 0;">Tribute Page</p>
+                </a>
+            </div>
+
+            <div class="project-tile">
+                <a href="www.Facebook.com">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                        alt="project">
+
+                    <p style="padding: 20px 0 20px 0;">Random Qoute Machine</p>
+
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="">
+                    <img class="project-image"
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                        alt="project">
+                    <p style="padding: 20px 0 20px 0;">JavaScript Calculator</p>
+                </a>
+            </div>
+
+            <div class="project-tile">
+                <a href="www.Facebook.com">
+                    <img class="project-image"
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
+                    <p style="padding: 20px 0 20px 0;">Tribute Page</p>
+                </a>
+            </div>
+
+            <div class="project-tile">
+                <a href="www.Facebook.com">
+                    <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+                        alt="project">
+
+                    <p style="padding: 20px 0 20px 0;">Random Qoute Machine</p>
+
+                </a>
+            </div>
+            <div class="project-tile">
+                <a href="">
+                    <img class="project-image"
+                        src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
+                        alt="project">
+                    <p style="padding: 20px 0 20px 0;">JavaScript Calculator</p>
+                </a>
+            </div>
+        </div>
+        <div id="btn">
+            <a href="">Show all</a>
+        </div>
+    </section>
+
+    <section id="contact-link">
+        <h2>Let's work together...</h2>
+        <p><em> How do you take your coffee? </em></p>
+
+        <div>
+            <a href="https://www.facebook.com/eugenio.meran">Facebook</a>
+            <a  href="https://github.com/freecodecamp" target="_blank" > GitHub</a>
+            <a href="">Twitter</a>
+            <a href="">Send a mail</a>
+            <a href="">Call me</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>**This is just a fake porfolio.All the projects and contact details given are not real.</p>
+        <p>@ Created for freCodeCamp(F)<p>
+    </footer>
+</body>
+
+</html>

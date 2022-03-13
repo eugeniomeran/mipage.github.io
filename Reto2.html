@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+            background-image: linear-gradient(30deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.8)),
+                url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position-x: 40%;
+            background-position-y: 15%;
+            font-family: 'Rubik', sans-serif;
+            color: aliceblue;
+        }
+
+        /*480*/
+
+        header {
+            text-align: center;
+            color: white;
+        }
+
+
+
+        #container {
+            background-color: rgba(42, 42, 74, 0.8);
+
+            max-width: 500px;
+            margin: 0 auto 0px auto;
+            display: flex;
+            flex-direction: column;
+            padding: 25px 15px;
+            text-align: left;
+        }
+
+        #title {
+            margin-top: 60px;
+            margin-bottom: 0px;
+            font-weight: lighter;
+        }
+
+        #description {
+            margin: 0;
+            padding: 20px;
+            font-size: large;
+        }
+
+        form div {
+            display: grid;
+            margin: 10px auto 10px auto;
+            font-size: 19px;
+        }
+
+        label {
+            margin-bottom: 10px;
+        }
+
+        #name,
+        #email,
+        #number {
+            height: 30px;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 4px 12px 4px 12px;
+            margin-bottom: 20px;
+            color: #616366;
+            background-color: #FFFFFF;
+        }
+
+        .recommend {
+            height: 20px;
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        #radio3 {
+            margin-bottom: 20px;
+        }
+
+
+
+        #dropdown {
+            height: 40px;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 4px 12px 4px 8px;
+            color: #616366;
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        #dropdown2 {
+            height: 40px;
+            border-radius: 5px;
+            font-size: 17px;
+            padding: 4px 12px 4px 8px;
+            color: #616366;
+            background-color: #FFFFFF;
+            margin-bottom: 20px;
+        }
+
+        spam {
+            font-size: 16px;
+        }
+
+        .coment {
+            height: 20px;
+            width: 20px;
+            margin-right: 8px;
+        }
+
+        textarea {
+            padding: 8px 8px 8px 8px;
+            font-size: 19px;
+            font-family: sans-serif;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        button {
+            border-radius: 2.5px;
+            width: 100%;
+            height: 45px;
+            border: none;
+            color: white;
+            font-size: 17px;
+            background-color: #37AF65;
+        }
+
+        button:hover {
+            background-color: #357c50;
+        }
+
+        @media (min-width:480px) {
+            #container {
+                padding: 25px 40px;
+                max-width: 100%;
+            }
+        }
+
+        @media (min-width:575px) {
+            #container {
+                padding: 25px 40px;
+                max-width: 465px;
+            }
+        }
+
+        @media (min-width:768px) {
+            #container {
+                padding: 25px 40px;
+                max-width: 660px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <Header>
+            <div>
+                <h1 id="title">freeCodeCamp Survey Form</h1>
+                <p id="description"><em>Thank you for taking the time to help us improve the platform</em> </p>
+        </Header>
+        <section>
+            <div id="container">
+                <form id="survey-form" action="https://www.wikidex.net/wiki/WikiDex">
+                    <div>
+                        <label id="name-label">Name</label>
+                        <input id="name" type="text" required placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label id="email-label">Email</label>
+                        <input id="email" type="email" required placeholder="Enter your Email">
+                    </div>
+                    <div>
+                        <label id="number-label">Age(optional)</label>
+                        <input id="number" type="number" min="18" required max="100" placeholder="Age" required>
+                    </div>
+                    <div>
+                        <label for="Description">Which option best describes your current role?</label>
+                        <select name="Description" id="dropdown">
+                            <option value="">Select current role</option>
+                            <option value="">Student</option>
+                            <option value="">Full time Job</option>
+                            <option value="">Full time Leaner</option>
+                            <option value="">Prefer not to say</option>
+                            <option value=""> Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="recommend">Would you recommend freeCodeCamp to a friend?</label>
+                        <label for="name"><input class="recommend" name="user-recommend" value="name" type="radio"
+                                checked>Definitely</label>
+                        <label for="name"><input class="recommend" name="user-recommend" value="name" type="radio">
+                            Maybe</label>
+                        <label for="name"><input class="recommend" id="radio3" name="user-recommend" value="name"
+                                type="radio"> Not
+                            sure</label>
+                    </div>
+                    <div>
+                        <label for="Favorite">What is your favorite feature of freeCodeCamp? </label>
+                        <select name="Favorite" id="dropdown2">
+                            <option value="">Select an option </option>
+                            <option value="">Charlleges</option>
+                            <option value="">Community</option>
+                            <option value="">Projects</option>
+                            <option value="">Open Source</option>
+                            <option value=""> Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="recommend">What would you like to see improved? <spam>(Check all that
+                                apply)</spam></label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Front-end Projects</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Back-end Projects</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Data Visualization</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Challenges</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Open Source Community</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Gitter help rooms</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Videos</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">City Meetups</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Wiki</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Forum</label>
+                        <label for=""><input class="coment" value="value" type="checkbox">Additional Courses</label>
+                    </div>
+                    <div>
+                        <label for="Comment">Any Comments or suggestions?</label>
+                        <textarea rows="4" placeholder="Enter your comment here"></textarea>
+                    </div>
+                    <button value="">Submit</button>
+
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+
+</html>
