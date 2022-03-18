@@ -11,8 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,300;0,400;1,300&family=Raleway:wght@400;500;700&family=Rubik:wght@300&display=swap"
         rel="stylesheet">
-    
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         * {
             padding: 0;
             margin: 0;
@@ -39,18 +43,33 @@
             align-items: center;
         }
 
+        #navbar h2 {
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+
         ul {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
-
+            height: 100%;
         }
 
         nav li {
             list-style-type: none;
             font-size: 20px;
-            padding: 0 17px;
+            height: 100%;
+            display: inline-block;
+        }
+
+        ul li a {
+            display: block;
+            padding: 20% 20px;
+        }
+
+        nav li:hover {
+            background-color: #45567D;
         }
 
         #welcome-section {
@@ -68,6 +87,7 @@
             color: white;
             font-size: 53px;
             height: auto;
+            margin-bottom: 10px;
         }
 
         #welcome-section p {
@@ -131,6 +151,10 @@
             background-color: #BE3144;
         }
 
+        /**/
+        /*Contactos:contact-link*/
+        /**/
+
         #contact-link {
             background-color: #313336;
             color: white;
@@ -170,8 +194,21 @@
 
         #contact-link a {
             margin: 15px;
+            transition: width 1s;
+            transition: transform 0.3s ease-out;
+            transition-property: transform;
+            transition-duration: 0.5s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
         }
 
+        #contact-link a:hover {
+            transform: translateY(8px);
+        }
+
+        /**/
+        /*Footer*/
+        /**/
         footer {
             background-color: #313336;
             color: white;
@@ -182,14 +219,31 @@
             justify-content: space-around;
         }
 
-        footer p{
+        footer p {
             margin-left: 20px;
         }
-        
+
+        /*Cambio se la resolucion de la pantallas es menor que 460 pixeles*/
+
+
         @media(max-width:460px) {
             #contact-link h2 {
-            font-size: 35px;
-        }
+                font-size: 35px;
+            }
+
+
+
+            footer {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+            }
+
+            p {
+                margin: 12px;
+            }
         }
 
         @media(min-width:715px) {
@@ -211,11 +265,11 @@
             }
 
             #contact-link h2 {
-            background-color: #313336;
-            color: white;
-            margin-top: 50px;
-            
-        }
+                background-color: #313336;
+                color: white;
+                margin-top: 50px;
+
+            }
         }
 
         @media(min-width:1075px) {
@@ -245,6 +299,7 @@
 
 <body>
     <nav id="navbar">
+        <h2>Eugenio Meran </h2>
         <ul>
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#projects">Works</a></li>
@@ -261,7 +316,7 @@
         <h2>These are some of my projects</h2>
         <div id="project-container">
             <div class="project-tile">
-                <a href="/Reto1.html">
+                <a href="/mipage.github.io/Reto1.html">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
                     <p style="padding: 20px 0 20px 0;">Tribute Page</p>
@@ -269,16 +324,15 @@
             </div>
 
             <div class="project-tile">
-                <a href="/Reto2.html">
+                <a href="/mipage.github.io/Reto2.html">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
                         alt="project">
-
                     <p style="padding: 20px 0 20px 0;">Random Qoute Machine</p>
-
                 </a>
             </div>
+
             <div class="project-tile">
-                <a href="/Reto3.html">
+                <a href="/mipage.github.io/Reto4.html">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
                         alt="project">
@@ -287,7 +341,7 @@
             </div>
 
             <div class="project-tile">
-                <a href="/Reto4.html">
+                <a href="/mipage.github.io/Reto1.html">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="project">
                     <p style="padding: 20px 0 20px 0;">Tribute Page</p>
@@ -295,7 +349,7 @@
             </div>
 
             <div class="project-tile">
-                <a href="www.Facebook.com">
+                <a href="/mipage.github.io/Reto2.html">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
                         alt="project">
 
@@ -304,13 +358,15 @@
                 </a>
             </div>
             <div class="project-tile">
-                <a href="">
+                <a href="/mipage.github.io/Reto4.html">
                     <img class="project-image"
                         src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
                         alt="project">
                     <p style="padding: 20px 0 20px 0;">JavaScript Calculator</p>
                 </a>
             </div>
+
+            
         </div>
         <div id="btn">
             <a href="">Show all</a>
@@ -323,7 +379,7 @@
 
         <div>
             <a href="https://www.facebook.com/eugenio.meran">Facebook</a>
-            <a  href="https://github.com/freecodecamp" target="_blank" > GitHub</a>
+            <a href="https://github.com/freecodecamp" target="_blank"> GitHub</a>
             <a href="">Twitter</a>
             <a href="">Send a mail</a>
             <a href="">Call me</a>
@@ -332,7 +388,7 @@
 
     <footer>
         <p>**This is just a fake porfolio.All the projects and contact details given are not real.</p>
-        <p>@ Created for freCodeCamp(F)<p>
+        <p>@ Created for freCodeCamp (F)<p>
     </footer>
 </body>
 
