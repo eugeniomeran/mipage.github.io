@@ -45,7 +45,7 @@
 
         #navbar h2 {
             color: white;
-            font-family: "Poppins", sans-serif;
+            font-family: "raleway";
         }
 
         ul {
@@ -65,7 +65,7 @@
 
         ul li a {
             display: block;
-            padding: 20% 20px;
+            padding: 20px 20px;
         }
 
         nav li:hover {
@@ -180,7 +180,7 @@
         }
 
         #contact-link div {
-            font-size: 23px;
+            font-size: 24px;
             display: flex;
             justify-content: center;
             width: 100%;
@@ -206,6 +206,12 @@
             transform: translateY(8px);
         }
 
+        #contact-link img {
+            width:26px; 
+            height:29px;
+            vertical-align: text-top;
+        }
+
         /**/
         /*Footer*/
         /**/
@@ -223,7 +229,14 @@
             margin-left: 20px;
         }
 
-        /*Cambio se la resolucion de la pantallas es menor que 460 pixeles*/
+        /*Cambios de la resolucion des la pantallas*/
+
+        @media(max-width:540px) {
+            #navbar h2 {
+                display: none;
+            }
+        }
+
 
 
         @media(max-width:460px) {
@@ -303,7 +316,7 @@
         <ul>
             <li><a href="#welcome-section">About</a></li>
             <li><a href="#projects">Works</a></li>
-            <li><a href="#contact-link">Contact</a></li>
+            <li><a href="#contact-link">Contact </a></li>
         </ul>
     </nav>
 
@@ -352,10 +365,11 @@
                 <a href="/mipage.github.io/Reto2.html">
                     <img class="project-image" src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
                         alt="project">
+
                     <p style="padding: 20px 0 20px 0;">Random Qoute Machine</p>
+
                 </a>
             </div>
-
             <div class="project-tile">
                 <a href="/mipage.github.io/Reto4.html">
                     <img class="project-image"
@@ -365,7 +379,7 @@
                 </a>
             </div>
 
-            
+
         </div>
         <div id="btn">
             <a href="">Show all</a>
@@ -377,11 +391,21 @@
         <p><em> How do you take your coffee? </em></p>
 
         <div>
-            <a href="https://www.facebook.com/eugenio.meran">Facebook</a>
-            <a href="https://github.com/freecodecamp" target="_blank"> GitHub</a>
-            <a href="">Twitter</a>
-            <a href="">Send a mail</a>
-            <a href="">Call me</a>
+            <a href="https://www.facebook.com/eugenio.meran">
+                <img src="/icons8-facebook-480.svg" alt="Icono de Facebook">
+                Facebook</a>
+            <a href="https://github.com/freecodecamp" target="_blank">
+                <img src="/icons8-github-500.svg" alt="Icono de Github">
+                GitHub</a>
+            <a href="">
+                <img src="/icons8-twitter.svg" alt="Icono de Twitter">
+                Twitter</a>
+            <a href="">
+                <img src="/icons8-correo-100.png" alt="Icono de Mail">
+                Send a mail</a>
+            <a href="">
+                <img src="/icons8-teléfono-100.png" alt="Icono de Telefono">
+                Call me</a>
         </div>
     </section>
 
