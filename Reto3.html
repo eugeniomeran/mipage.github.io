@@ -71,21 +71,24 @@
         }
 
         #how-it-works {
-            display: grid;
-            align-items: center;
+            overflow: hidden;
+            padding-bottom: 315px;
+            /* Adecua este valor para controlar la altura del video */
+            position: relative;
+            height: 0;
+            display: flex;
             justify-content: center;
         }
 
-        #how-it-works div {
-            width: 560px;
-        }
+        #how-it-works div {}
 
         #how-it-works iframe {
+            /*left: 0;
+            top: 0;*/
             max-width: 560px;
-            max-height: 315px;
-            align-items: center;
+            height: 100%;
             width: 100%;
-            height: 315px;
+            position: absolute;
         }
 
 
@@ -221,13 +224,12 @@
 
     <!--Inicio de how-it-works -->
     <section id="how-it-works">
-        <div>
-            <iframe src="https://www.youtube.com/embed/77cX0Fd1cKs" title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/77cX0Fd1cKs" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
 
-            </iframe>
-        </div>
+        </iframe>
     </section>
     <!--Fin de how-it-works -->
 
