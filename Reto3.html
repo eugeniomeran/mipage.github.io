@@ -43,7 +43,7 @@
             margin-right: 40px;
         }
 
-        img {
+        #header-img {
             max-width: 300px;
             min-width: 300px;
             height: 35px;
@@ -67,8 +67,33 @@
         }
 
         #features {
-            text-align: center;
+            display: grid;
+            justify-content: center;
         }
+
+        .features-containers {
+            display: flex;
+            height: 125px;
+        }
+
+        .features-icon,
+        .features-text {
+            display: grid;
+            align-content: center;
+        }
+
+        .features-icon {
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .features-text {
+            width: 70%;
+        }
+
+
 
         #how-it-works {
             overflow: hidden;
@@ -79,8 +104,6 @@
             display: flex;
             justify-content: center;
         }
-
-        #how-it-works div {}
 
         #how-it-works iframe {
             /*left: 0;
@@ -125,6 +148,15 @@
             width: 160px;
             border-radius: 5px;
             border: none;
+        }
+
+        @media (max-width:550px){
+            .features-icon {
+            display: none;
+        }
+        .features-text {
+            align-items: center;
+        }
         }
 
         @media (max-width:660px) {
@@ -199,20 +231,33 @@
 
     <!--Inicio de features -->
     <section id="features">
-        <div>
-            <div>
+        <div class="features-containers">
+            <div class="features-icon">
+                <img style="height:60px ; width: 48px;" src="/icons8-camión-100.png" alt="Camoin Amarillo">
+            </div>
+            <div class="features-text">
                 <h2>Premium Materials</h2>
                 <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
                     your
                     purchase.</p>
             </div>
-            <div>
+        </div>
+        <div class="features-containers">
+            <div class="features-icon">
+                <img style="height:60px ; width: 48px;" src="/icons8-camión-100.png" alt="Camoin Amarillo">
+            </div>
+            <div class="features-text">
                 <h2>Fast Shipping</h2>
                 <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
                     returns if
                     you are not satisfied. </p>
             </div>
-            <div>
+        </div>
+        <div class="features-containers">
+            <div class="features-icon">
+                <img style="height:60px ; width: 48px;" src="/icons8-camión-100.png" alt="Camoin Amarillo">
+            </div>
+            <div class="features-text">
                 <h2>Quality Assurance</h2>
                 <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test
                     the
