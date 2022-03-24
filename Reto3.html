@@ -66,58 +66,9 @@
             text-decoration: none;
         }
 
-        #features {
-            display: grid;
-            justify-content: center;
-        }
-
-        .features-containers {
-            display: flex;
-            height: 125px;
-        }
-
-        .features-icon,
-        .features-text {
-            display: grid;
-            align-content: center;
-        }
-
-        .features-icon {
-            width: 20%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .features-text {
-            width: 70%;
-        }
-
-
-
-        #how-it-works {
-            overflow: hidden;
-            padding-bottom: 315px;
-            /* Adecua este valor para controlar la altura del video */
-            position: relative;
-            height: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        #how-it-works iframe {
-            /*left: 0;
-            top: 0;*/
-            max-width: 560px;
-            height: 100%;
-            width: 100%;
-            position: absolute;
-        }
-
-
         #section-form {
             margin-top: 110px;
-            margin-bottom: 50px;
+            margin-bottom: 90px;
             display: grid;
             align-items: center;
             text-align: center;
@@ -150,13 +101,64 @@
             border: none;
         }
 
-        @media (max-width:550px){
-            .features-icon {
-            display: none;
+        #features {
+            display: grid;
+            justify-content: center;
         }
+
+        .features-containers {
+            display: flex;
+            height: 125px;
+        }
+
+        .features-icon,
         .features-text {
+            display: grid;
+            align-content: center;
+        }
+
+        .features-icon {
+            width: 20%;
+            display: flex;
+            justify-content: center;
             align-items: center;
         }
+
+
+        #how-it-works {
+            overflow: hidden;
+            padding-bottom: 315px;
+            /* Adecua este valor para controlar la altura del video */
+            position: relative;
+            height: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 45px;
+        }
+
+        #how-it-works iframe {
+            /*left: 0;
+            top: 0;*/
+            max-width: 560px;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        @media (min-width:551px) {
+            .features-text {
+                width: 80%;
+            }
+        }
+
+        @media (max-width:550px) {
+            .features-icon {
+                display: none;
+            }
+
+            .features-text {
+                text-align: center;
+            }
         }
 
         @media (max-width:660px) {
@@ -233,7 +235,7 @@
     <section id="features">
         <div class="features-containers">
             <div class="features-icon">
-                <img style="height:60px ; width: 48px;" src="/icons8-camión-100.png" alt="Camoin Amarillo">
+                <img style="height:60px ; width: 48px;" src="/icons8-garantía-100.png" alt="Camoin Amarillo">
             </div>
             <div class="features-text">
                 <h2>Premium Materials</h2>
@@ -255,7 +257,7 @@
         </div>
         <div class="features-containers">
             <div class="features-icon">
-                <img style="height:60px ; width: 48px;" src="/icons8-camión-100.png" alt="Camoin Amarillo">
+                <img style="height:60px ; width: 48px;" src="/icons8-contenedor-de-carga-100.png" alt="Camoin Amarillo">
             </div>
             <div class="features-text">
                 <h2>Quality Assurance</h2>
