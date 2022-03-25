@@ -50,9 +50,11 @@
             height: 35px;
         }
 
-
-
         ul {
+            list-style-type: none;
+        }
+
+        header ul {
             list-style-type: none;
             margin: 0;
             display: flex;
@@ -135,6 +137,7 @@
             display: flex;
             justify-content: center;
             margin-top: 45px;
+            margin-bottom: 50px;
         }
 
         #how-it-works iframe {
@@ -144,6 +147,64 @@
             height: 100%;
             width: 100%;
             position: absolute;
+        }
+
+        #pricing {
+            margin: 0 auto 0 auto;
+            display: flex;
+            width: 100%;
+            max-width: 960px;
+            justify-content: center;
+            text-align: center;
+        }
+
+
+        .card {
+            width: 310px;
+            height: 310px;
+            border: 1px solid black;
+            margin: 10px;
+        }
+
+        .card h3 {
+            background-color: #DDDDDD;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .card h2 {
+            margin-top: 16px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        #pricing ul {
+            padding: 0;
+        }
+
+        #pricing li {
+            margin-bottom: 10px;
+        }
+
+        #pricing input {
+            background-color: #FFA500;
+            height: 40px;
+            width: 94px;
+            border: none;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+
+
+
+        footer {
+            background-color: #DDDDDD;
+            width: 100%;
+            margin: 0 auto 0 auto;
+            max-width: 960px;
+            height: 40px;
+            padding: 20px;
         }
 
         @media (min-width:551px) {
@@ -180,7 +241,7 @@
             }
 
 
-            ul {
+            header ul {
                 padding: 0;
                 display: grid;
                 position: initial;
@@ -197,6 +258,12 @@
 
             #section-form {
                 margin-top: 154px;
+            }
+        }
+
+        @media (max-width:800px) {
+            #pricing {
+                display: grid;
             }
         }
     </style>
@@ -236,7 +303,8 @@
     <section id="features">
         <div class="features-containers">
             <div class="features-icon">
-                <img style="height:60px ; width: 48px;" src="/mipage.github.io/Iconos/icons8-garantía-100.png" alt="Camoin Amarillo">
+                <img style="height:60px ; width: 48px;" src="/mipage.github.io/Iconos/icons8-garantía-100.png"
+                    alt="Camoin Amarillo">
             </div>
             <div class="features-text">
                 <h2>Premium Materials</h2>
@@ -247,7 +315,8 @@
         </div>
         <div class="features-containers">
             <div class="features-icon">
-                <img style="height:60px ; width: 48px;" src="/mipage.github.io/Iconos/icons8-camión-100.png" alt="Camoin Amarillo">
+                <img style="height:60px ; width: 48px;" src="/mipage.github.io/Iconos/icons8-camión-100.png"
+                    alt="Camoin Amarillo">
             </div>
             <div class="features-text">
                 <h2>Fast Shipping</h2>
@@ -258,7 +327,8 @@
         </div>
         <div class="features-containers">
             <div class="features-icon">
-                <img style="height:60px ; width: 48px;" src="/mipage.github.io/Iconos/icons8-contenedor-de-carga-100.png" alt="Camoin Amarillo">
+                <img style="height:60px ; width: 48px;"
+                    src="/mipage.github.io/Iconos/icons8-contenedor-de-carga-100.png" alt="Camoin Amarillo">
             </div>
             <div class="features-text">
                 <h2>Quality Assurance</h2>
@@ -283,17 +353,59 @@
 
     <!--Inicio de pricing -->
     <section id="pricing">
-        <div>
-            <div class="card1">card1</div>
-            <div class="card2">card2</div>
-            <div class="card3">card2</div>
+        <div class="card">
+            <h3>TENOR TROMBONE</h3>
+            <h2>$600</h2>
+            <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <form action="">
+                <input type="submit" value="SELECT">
+            </form>
+
+        </div>
+        <div class="card">
+            <h3>BASS TROMBONE</h3>
+            <h2>$900</h2>
+            <ul>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <form action="">
+                <input type="submit" value="SELECT">
+            </form>
+
+        </div>
+        <div class="card">
+            <h3>VALVE TROMBONE</h3>
+            <h2>$1200</h2>
+            <ul>
+                <li>Plays similar to a Trumpet.</li>
+                <li>Great for Jazz a Trumpet.</li>
+                <li>Lorem ipsum dolor.</li>
+                <li>Lorem ipsum.</li>
+            </ul>
+            <form action="">
+                <input type="submit" value="SELECT">
+            </form>
+        </div>
         </div>
     </section>
     <!--Inicio de pricing -->
 
     <!--Inicio de footer -->
     <footer>
-        Copy@
+        <ul>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Contact</li>
+        </ul>
+        <p>Copyright 2016, Original trombones</p>
     </footer>
     <!--Fin de footer -->
 
