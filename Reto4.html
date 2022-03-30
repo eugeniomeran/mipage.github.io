@@ -3,8 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,900&family=Open+Sans:ital,wght@0,300;1,300&family=Rubik:wght@300&display=swap"
         rel="stylesheet">
@@ -35,28 +33,34 @@
             padding: 0px 20px;
 
         }
-
-        nav h2 {
-            text-align: center;
-            font-weight: bold;
-            font-size: 28px;
-            margin: 0;
-            padding: 20px 0px 0px 0px;
-
-        }
-
+        
         #navbar {
             top: 0px;
             left: 0px;
             width: 100%;
             border-right: 2px #5A5F73 solid;
+        }
 
+        nav h2 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 28px;
+            margin:0;
+            margin-bottom: 15px;
+            padding: 20px 0px 0px 0px;
+        }
+
+        div {
+            border: solid 1px #000000;
+            color: #ffffff;
+            width: 100%;
+            height: 225px;
+            overflow-y: auto;
         }
 
         nav ul {
             border: 1px black solid;
-            overflow-y: auto;
-            overflow-y: hidden;
+            margin: 0;
         }
 
         nav li {
@@ -107,6 +111,11 @@
 
         }
 
+        @media (max-width:815px) {
+            #ul-max-816 {
+                display: none;
+            }
+        }
 
 
         @media (min-width:816px) {
@@ -116,7 +125,7 @@
                 width: 300px;
                 border-right: 2px #5A5F73 solid;
                 overflow-y: auto;
-                
+
             }
 
             #main-doc {
@@ -127,11 +136,9 @@
                 border: 1px 1px 1px 0px;
                 border: none;
                 margin-bottom: 0px;
-                overflow-y: auto;
-                overflow-x: auto;
             }
 
-            
+
         }
     </style>
 </head>
@@ -142,7 +149,8 @@
         <header>
             <h2>JS Documentation</h2>
         </header>
-        
+
+        <div>
             <ul>
                 <li><a class="nav-link" href="#Introduction">Introduction</a> </li>
                 <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a> </li>
@@ -159,9 +167,30 @@
                 <li><a class="nav-link" href="#Function_declarations">Function declarations</a> </li>
                 <li><a class="nav-link" href="#Reference">Reference</a> </li>
             </ul>
+        </div>
+
+        <ul id="ul-max-816">
+            <li><a class="nav-link" href="#Introduction">Introduction</a> </li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a> </li>
+            <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a> </li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a> </li>
+            <li><a class="nav-link" href="#Variables">Variables</a> </li>
+            <li><a class="nav-link" href="#Declaring_variables">Declaring Variables</a> </li>
+            <li><a class="nav-link" href="#Variable_scope">Variable scope</a> </li>
+            <li><a class="nav-link" href="#Global_variables">Global Variables</a> </li>
+            <li><a class="nav-link" href="#Constants">Constants</a> </li>
+            <li><a class="nav-link" href="#Data_types">Data types</a> </li>
+            <li><a class="nav-link" href="#If...else_statement">If...else statement</a> </li>
+            <li><a class="nav-link" href="#While_statement">While statement</a> </li>
+            <li><a class="nav-link" href="#Function_declarations">Function declarations</a> </li>
+            <li><a class="nav-link" href="#Reference">Reference</a> </li>
+        </ul>
+
     </nav>
 
+
     <main id="main-doc">
+
         <section class="main-section" id="Introduction">
             <header>
                 <h2>Introduction</h2>
@@ -677,7 +706,7 @@
                 width: 300px;
                 border-right: 2px #5A5F73 solid;
                 overflow-y: auto;
-                
+
             }
 
             #main-doc {
@@ -692,7 +721,7 @@
                 overflow-x: auto;
             }
 
-            
+
         }
     </style>
 </head>
@@ -703,23 +732,23 @@
         <header>
             <h2>JS Documentation</h2>
         </header>
-        
-            <ul>
-                <li><a class="nav-link" href="#Introduction">Introduction</a> </li>
-                <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a> </li>
-                <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a> </li>
-                <li><a class="nav-link" href="#Hello_world">Hello world</a> </li>
-                <li><a class="nav-link" href="#Variables">Variables</a> </li>
-                <li><a class="nav-link" href="#Declaring_variables">Declaring Variables</a> </li>
-                <li><a class="nav-link" href="#Variable_scope">Variable scope</a> </li>
-                <li><a class="nav-link" href="#Global_variables">Global Variables</a> </li>
-                <li><a class="nav-link" href="#Constants">Constants</a> </li>
-                <li><a class="nav-link" href="#Data_types">Data types</a> </li>
-                <li><a class="nav-link" href="#If...else_statement">If...else statement</a> </li>
-                <li><a class="nav-link" href="#While_statement">While statement</a> </li>
-                <li><a class="nav-link" href="#Function_declarations">Function declarations</a> </li>
-                <li><a class="nav-link" href="#Reference">Reference</a> </li>
-            </ul>
+
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a> </li>
+            <li><a class="nav-link" href="#What_you_should_already_know">What you should already know</a> </li>
+            <li><a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a> </li>
+            <li><a class="nav-link" href="#Hello_world">Hello world</a> </li>
+            <li><a class="nav-link" href="#Variables">Variables</a> </li>
+            <li><a class="nav-link" href="#Declaring_variables">Declaring Variables</a> </li>
+            <li><a class="nav-link" href="#Variable_scope">Variable scope</a> </li>
+            <li><a class="nav-link" href="#Global_variables">Global Variables</a> </li>
+            <li><a class="nav-link" href="#Constants">Constants</a> </li>
+            <li><a class="nav-link" href="#Data_types">Data types</a> </li>
+            <li><a class="nav-link" href="#If...else_statement">If...else statement</a> </li>
+            <li><a class="nav-link" href="#While_statement">While statement</a> </li>
+            <li><a class="nav-link" href="#Function_declarations">Function declarations</a> </li>
+            <li><a class="nav-link" href="#Reference">Reference</a> </li>
+        </ul>
     </nav>
 
     <main id="main-doc">
@@ -1122,4 +1151,5 @@
         </section>
     </main>
 </body>
+
 </html>
